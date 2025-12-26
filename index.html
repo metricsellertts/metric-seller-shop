@@ -32,11 +32,9 @@
       color: white;
       font-family: 'Inter', sans-serif;
     }
-    /* Ajuste para evitar quebras de texto ruins em telas pequenas */
-    .headline-container {
-      max-width: 90%;
-      margin-left: auto;
-      margin-right: auto;
+    /* Resolve o problema das quebras de linha enviando o texto de forma equilibrada */
+    .headline-fix {
+      text-wrap: balance;
     }
   </style>
 </head>
@@ -61,13 +59,12 @@
       </h1>
     </div>
 
-    <div class="headline-container">
-      <h2 class="text-3xl md:text-4xl font-extrabold leading-tight mb-6">
-        Venda <span class="text-primary">Todos os Dias</span> no TikTok Shop usando <span class="text-primary">Dados Reais</span> (não achismo)
-      </h2>
-    </div>
+    <h2 class="headline-fix text-3xl md:text-4xl font-extrabold leading-tight mb-6 px-2">
+      Venda <span class="text-primary">Todos os Dias</span> no TikTok Shop<br class="hidden md:block"> 
+      usando <span class="text-primary">Dados Reais</span> (não achismo)
+    </h2>
 
-    <p class="text-gray-400 text-lg mb-10">
+    <p class="headline-fix text-gray-400 text-lg mb-10 px-4">
       Descubra <span class="text-white font-semibold">quais produtos, vídeos e estratégias</span>
       estão vendendo agora no TikTok Shop — com métricas reais, prontas para escalar.
     </p>
@@ -90,7 +87,7 @@
         <div>
           <h3 class="font-bold text-white">Criativos que Já Vendem</h3>
           <p class="text-gray-400 text-sm">
-            <span class="text-white font-medium italic">Modele</span> formatos de vídeos <strong class="text-white">validados por dados</strong>,
+            <strong class="text-white">Modele</strong> formatos de vídeos <strong class="text-white">validados por dados</strong>,
             seja com IA ou conteúdo real.
           </p>
         </div>
@@ -136,10 +133,6 @@
           </svg>
           Pagamento seguro • Acesso imediato • Sem mensalidade
         </p>
-
-        <p class="text-xs text-gray-600 bg-white/5 px-4 py-2 rounded-full border border-white/5">
-          🔥 Ferramenta usada por vendedores profissionais no TikTok Shop
-        </p>
       </div>
     </div>
 
@@ -151,3 +144,4 @@
 
 </body>
 </html>
+
