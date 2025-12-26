@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Bem-vindo ao Metric Seller Shop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            background: '#050505',
+            surface: '#0f0f0f',
+            primary: '#10b981'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #050505;
+      color: white;
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex items-center justify-center px-4">
+  <main class="max-w-lg w-full text-center">
+    <div class="mb-6 flex justify-center items-center gap-3">
+      <div class="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6 text-primary">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 17l6-6 4 4 7-7"/>
+          <path stroke-linecap="round" stroke-linejoin="round" d="M14 7h7v7"/>
+        </svg>
+      </div>
+      <h1 class="text-xl font-semibold">Metric Seller Shop</h1>
+    </div>
+
+    <h2 class="text-3xl font-bold mb-4">Compra confirmada ✅</h2>
+    <p class="text-gray-400 mb-8">
+      Seu acesso foi liberado. O próximo passo é entrar no nosso grupo exclusivo de compradores no WhatsApp.
+    </p>
+
+    <div class="bg-surface rounded-2xl p-6 mb-8 text-left space-y-3">
+      <p>✔ Acesso liberado ao Metric Seller</p>
+      <p>✔ Conteúdos e orientações</p>
+      <p>✔ Comunidade exclusiva no WhatsApp</p>
+    </div>
+
+    <a href="https://chat.whatsapp.com/Fju3nIDIamdDVqkfbcytEq" 
+       class="block w-full bg-primary hover:bg-emerald-600 transition text-black font-bold py-4 rounded-xl text-lg uppercase tracking-tight">
+      Entrar no Grupo de Compradores
+    </a>
+
+    <p class="text-xs text-gray-500 mt-4">
+      Grupo exclusivo para novos membros • Metric Seller Shop
+    </p>
+  </main>
+</body>
+</html>
